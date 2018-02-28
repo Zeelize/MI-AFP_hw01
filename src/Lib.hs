@@ -32,7 +32,10 @@ countDigits x
 -- #05 = Return euclidean distance of 2 2D points
 -- (use variables x1, y1, x2, y2 in expression instead of undefined,
 --  try not to use multiplication)
-distance2D (x1, y1) (x2, y2) = undefined
+distance2D (x1, y1) (x2, y2) = sqrt (x' * x' + y' * y')
+    where
+        x' = x1 - x2
+        y' = y1 - y2
 
 -- #06 = Complete the function to translate natural number to
 --       binary string (17 -> "1001", 0 -> "", 2 -> "10")
