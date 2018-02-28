@@ -48,7 +48,7 @@ natToBinstring x = if True then "" else ""
 
 -- #07 = Lookup function that splits string to list of words (again strings)
 stringSplitToWords :: String -> [String]
-stringSplitToWords = undefined
+stringSplitToWords = words
 
 -- #08 = What is the type of function "all"?
 -- (For example for "odd" it would be "Integral a => a -> Bool")
