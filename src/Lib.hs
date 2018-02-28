@@ -25,7 +25,9 @@ infoReversed str = (reverse str) ++ " is reversed " ++ str
 -- #04 = Count number of digits of given integer
 -- (It can be done just by looking up suitable functions.
 --  Try it WITHOUT conditions and recursion!)
-countDigits x = undefined
+countDigits x 
+    | x == 0 = 1
+    | otherwise = ceiling(logBase 10 ((abs x) + 1))
 
 -- #05 = Return euclidean distance of 2 2D points
 -- (use variables x1, y1, x2, y2 in expression instead of undefined,
