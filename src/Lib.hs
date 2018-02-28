@@ -11,6 +11,8 @@ module Lib
     , pluralizeFunc
     ) where
 
+import Language.English.Plural
+
 -- #01 = Area of trapezoid (check tests if not sure)
 trapezoidArea a b h = ((a + b) / 2) * h
 
@@ -64,4 +66,4 @@ aesonAuthor = "Bryan O'Sullivan"
 --       English string ("letter" -> "letters", "tooth -> teeth", ...)
 -- (Hint: do not reinvent the wheel, look it up and use as dependency!)
 pluralizeFunc :: String -> String
-pluralizeFunc = undefined
+pluralizeFunc = plural
