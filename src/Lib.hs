@@ -12,11 +12,11 @@ module Lib
     ) where
 
 -- #01 = Area of trapezoid (check tests if not sure)
-trapezoidArea a b h = undefined
+trapezoidArea a b h = ((a + b) / 2) * h
 
 -- #02 = Write boolean expression to check if year is leap
 leapYear :: Word -> Bool
-leapYear year = undefined
+leapYear year = (mod year 4 == 0) && ((mod year 400 == 0) || not (mod year 100 == 0))
 
 -- #03 = Message about reversed string ("abc is reversed cba")
 infoReversed :: String -> String
