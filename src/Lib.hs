@@ -20,7 +20,7 @@ leapYear year = (mod year 4 == 0) && ((mod year 400 == 0) || not (mod year 100 =
 
 -- #03 = Message about reversed string ("abc is reversed cba")
 infoReversed :: String -> String
-infoReversed str = undefined
+infoReversed str = (reverse str) ++ " is reversed " ++ str   
 
 -- #04 = Count number of digits of given integer
 -- (It can be done just by looking up suitable functions.
