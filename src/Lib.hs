@@ -34,7 +34,7 @@ countDigits x
 -- #05 = Return euclidean distance of 2 2D points
 -- (use variables x1, y1, x2, y2 in expression instead of undefined,
 --  try not to use multiplication)
-distance2D (x1, y1) (x2, y2) = sqrt (x' * x' + y' * y')
+distance2D (x1, y1) (x2, y2) = sqrt (x' ^ 2 + y' ^ 2)
     where
         x' = x1 - x2
         y' = y1 - y2
